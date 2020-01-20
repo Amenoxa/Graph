@@ -1,0 +1,13 @@
+.galery {
+    background: url(../img/large/galery-bg.jpg) center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10vh;
+    padding-bottom: 2rem;
+   
+}

@@ -1,0 +1,42 @@
+.menu {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 7vh;
+    justify-content: stretch;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+
+
+    &__logo {
+        max-width: 10vw;
+        display: block;
+        float: left;
+    }
+    &__list {
+        list-style-type: none;
+        flex-basis: auto;
+        display: flex;
+        flex-basis: 75%;
+        justify-content: space-evenly;
+        
+    }
+    &__item {
+        display: block;
+        align-self: center;
+    }
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgba(209, 119, 119, 0.979);
+        display: block;
+        font-size: 1.5rem;
+        &:hover {
+            color: rgba(255, 0, 0, 0.932);
+        }
+    
+    }
+
+}

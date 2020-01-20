@@ -1,0 +1,33 @@
+.about { 
+    background: url(../img/large/about-bg.jpg) center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__title {
+        flex-basis: 100%;
+        text-transform: uppercase;
+        font-weight: bold;
+        align-self: center;
+        text-align: center;
+    }
+    &__text {
+        flex-basis: 40%;
+        background-color: rgba(206, 235, 236, 0.192);
+        margin: 10px;
+        padding: 15px;
+        font-size: 20px;
+        align-self: flex-start;
+    }
+    &__image {
+        flex-basis: 30%;
+        max-width: 400px;
+        max-height: 300px;
+        display: block;
+        border-radius: 50%;
+        border: 10px solid rgba(255, 255, 255, 0.034);
+    }
+}
