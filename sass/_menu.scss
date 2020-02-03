@@ -9,6 +9,7 @@
     background-color: #fff;
 
     &__logo {
+        max-width: 10vw;
         flex-basis: 20%;
         display: block;
         float: left;
@@ -17,9 +18,9 @@
             max-width: 10vw;
         }
     }
+
     &__list {
         list-style-type: none;
-        flex-basis: auto;
         display: flex;
         flex-basis: 75%;
         justify-content: space-evenly;
