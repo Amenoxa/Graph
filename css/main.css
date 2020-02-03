@@ -369,6 +369,15 @@ html {
       grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media (max-width: 400px) {
+  .contact {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr;
+  }
+}
+
 .contact__title {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -380,6 +389,15 @@ html {
   text-transform: uppercase;
   text-justify: center;
   padding: 25px auto;
+}
+
+@media (max-width: 400px) {
+  .contact__title {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
 }
 
 .contact__item {
@@ -419,6 +437,12 @@ html {
       align-self: center;
 }
 
+.footer__list {
+  margin: auto;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
 .footer__item {
   display: inline-block;
   margin: 0 20px;
@@ -452,5 +476,13 @@ html {
 .fa:hover {
   background: #b98488;
   color: #e03333;
+}
+
+@media (max-width: 400px) {
+  .fa {
+    font-size: 18px;
+    width: 24px;
+    height: 24px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

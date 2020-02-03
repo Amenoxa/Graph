@@ -7,9 +7,14 @@
     align-content: center;
     justify-items: center;
     grid-template-rows: 1fr auto;
+    
     &__social {
         grid-row: 1;
         align-self: center;
+    }
+    &__list {
+        margin: auto;
+        padding-inline-start: 0px;
     }
     &__item {
         display: inline-block;
@@ -38,5 +43,10 @@
     &:hover {
         background: #b98488;
 	    color: rgb(224, 51, 51);
+    }
+    @media (max-width: 400px){
+        font-size: 18px;
+	    width: 24px;
+        height: 24px;
     }
 }

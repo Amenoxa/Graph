@@ -9,6 +9,10 @@
     padding-top: 10vh;
     grid-template-rows: auto 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width: 400px){
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr;
+    }
     &__title {
         grid-column: 1/4;
         grid-row: 1/2;
@@ -16,6 +20,10 @@
         text-transform: uppercase;
         text-justify: center;
         padding: 25px auto;
+        @media (max-width: 400px){
+            grid-row: 1;
+            grid-column: 1;
+        }
     }
     &__item {
         margin: auto;
