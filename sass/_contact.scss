@@ -1,11 +1,28 @@
 .contact {
     background: url(../img/large/contact-bg.jpg) center fixed;
     background-size: cover;
-    min-height: 80vh;
-    display: flex;
+    min-height: 70vh;
+    display: grid;
     flex-basis: 100%;
-    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     padding-top: 10vh;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    &__title {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        margin: auto;
+        text-transform: uppercase;
+        text-justify: center;
+        padding: 25px auto;
+    }
+    &__item {
+        margin: auto;
+        justify-content: center;
+        padding: 20px;
+    }
+    &__subtitle {
+        margin: auto;
+    }
 }

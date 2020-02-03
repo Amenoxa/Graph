@@ -1,7 +1,6 @@
 .services {
     background: url(../img/large/services-bg.jpg) center fixed;
     background-size: cover;
-    flex-basis: 100%;
     min-height: 100vh;
     flex-basis: 100%;
     display: grid;
@@ -10,6 +9,10 @@
     justify-content: center;
     align-content: center;
     padding-top: 10vh;
+    @media (max-width: 735px){
+        grid-template-columns: 85vw;
+        grid-template-rows: 20vh 1fr 1fr 1fr 1fr; 
+    }
     &__title {
         grid-row: 1;
         grid-column: 1/3;
@@ -17,9 +20,18 @@
         text-transform: uppercase;
         margin: auto;
         font-size: 2.5rem;
+        @media (max-width: 735px){
+            font-size: 1.5rem;
+            grid-row: 1;
+            grid-column: 1;
+        }
+        @media (max-width: 485px){
+            font-size: 1.2rem;
+        }
     }
     &__item {
         margin: 20px;
+        padding: 10px;
         display: flex;
         flex-wrap: wrap;
         flex-basis: 100%;
@@ -28,10 +40,23 @@
     }
     &__service-title {
         text-transform: capitalize;
+        @media (max-width: 1150px){
+            font-size: 1.7rem;
+        }
+        @media (max-width: 920px){
+            font-size: 1.4rem;
+        }
+        @media (max-width: 735px){
+            font-size: 1rem;
+        }
+        
     }
     &__service-image {
         display: block;
         max-width: 30vw;
+        @media (max-width: 735px){
+            max-width: 70vw;
+        }
     }
     &__service-text {
       margin: 10px 20px;

@@ -6,6 +6,7 @@
     flex-basis: 100%;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 10vh;
 
     &__title {
         flex-basis: 100%;
@@ -21,6 +22,9 @@
         padding: 15px;
         font-size: 20px;
         align-self: flex-start;
+        @media (max-width: 735px){
+            flex-basis: 100%;
+        }
     }
     &__image {
         flex-basis: 30%;
