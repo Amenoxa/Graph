@@ -4,6 +4,15 @@ html {
     min-height: 200vh;
     scroll-behavior: smooth;
 }
+hr {
+    height: 5px;
+    width: 70px;
+    text-align: center;
+    position: relative;
+    background: #0505055b;
+    margin: 5 auto;
+    border: 0;
+}
 .wpapper {
     display: flex;
     flex-basis: 100%;
